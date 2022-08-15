@@ -1,6 +1,24 @@
-me olvide de subir las cosas.
+# convbaspy
+### A python - textual CLI IEEE-754 Converter App
+---
+To start:
 
-pyinstaller does not make it easy to make a lightweight executable
+```bash
+    #mv convbaspy
+    python convbaspy.py
+
+```
+
+Install the requirements:
+    pip install -r requirements.txt
+
+
+#### Made with @Textualize/textual
+##### https://github.com/Textualize/textual
+
+
+> Still trying to make it a lightweight executable...
+> pyinstaller seems not to like that.
 
 
 
