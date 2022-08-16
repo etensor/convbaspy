@@ -7,7 +7,7 @@
 To start:
 
 ```bash
-    #cd convbaspy
+    #cd basconv
     python convbaspy.py
 
 ```
