@@ -1,5 +1,4 @@
 textual
-numpy
 rich
 pyperclip
 pyfiglet

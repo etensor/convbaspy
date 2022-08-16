@@ -155,7 +155,7 @@ class Calculator(GridView):
         "+/-": LIGHT,
     }
 
-    display = Reactive("0")
+    display = Reactive("")
     show_ac = Reactive(True)
     modo_c  = Reactive('estandar')  # modos -> estandar, 32bit, 64bit
 
@@ -523,6 +523,7 @@ class CalculatorApp(App):
                 self.calc.display = self.calc.value = self.calc.value + event.key
                 #self.calc.numbers[idx].value = self.calc.display
 
+
         if self.calc.modo_c == 'estandar' and \
              event.key in ('a', 'b', 'c', 'd', 'e', 'f') or event.key in ('A','B','C','D','E','F'):
             if self.calc.baseT > 10 and self.calc.baseT < 17:
@@ -565,10 +566,8 @@ class CalculatorApp(App):
         ##
 
 
-ccs = Console()
 
-
-def runApp():
+def main():
     print('''
 :'######:::'#######::'##::: ##:'##::::'##:'########:::::'###:::::'######:'########::'##:::'##:
 '##... ##:'##.... ##: ###:: ##: ##:::: ##: ##.... ##:::'## ##:::'##... ##:##.... ##:. ##:'##::
@@ -579,16 +578,19 @@ def runApp():
 . ######::. #######:: ##::. ##:::. ###:::: ########:: ##:::: ##:. ######::##::::::::::: ##::::
 :......::::.......:::..::::..:::::...:::::........:::..:::::..:::......:::.::::::::::::..:::::  
     ''')
+    ccs = Console()
+    
     print('''
     \n\t  David Penilla - etensor
     \n\t---------------------------
     ''')
     ccs.print('\tAdvertencia:', style='red')
     print('\t   Intente no mantener presionada ninguna tecla.')
+    ccs.print('\t   Press EC at the beginning to flush broken results.', style='yellow')
     ccs.print('\t   Presione encima de los resultados para copiar su valor.', style='green')
     input('\n\n - presione enter para continuar...')
     CalculatorApp.run(title="Calculadora IEEE754", log="textual.log")
 
 
 if __name__ == "__main__":
-    runApp()
+    main()
