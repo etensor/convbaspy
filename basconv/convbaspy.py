@@ -2,16 +2,14 @@
 **modificado desde el original : -> examples/calculator.py
 https://github.com/Textualize/textual
 
-
-    github.com/etensor/baseconvpy
 La documentación de la libreria es muy escasa y sus alcances se ocultan
 entre los ejemplos del autor.
+
+  github.com/etensor/convbaspy
 
         Conversor de Bases
        --------------------
 
-# David Penilla
-# github.com/etensor
 
 """
 
@@ -337,9 +335,9 @@ class Calculator(GridView):
             num_32='col5-start|col8-end,row6',
             num_64='col5-start|col8-end,row7',
             exp32t='col1,row8',
-            exp64t='col4,row8',
+            exp64t='col4-start|col5-end,row8',
             mnt32t='col2-start|col3-end,row8',
-            mnt64t='col5-start|col8-end,row8',
+            mnt64t='col6-start|col8-end,row8',
             zero="col1-start|col2-end,row7",
         )  # Posicionamiento de areas en la grid
         # Place out widgets in to the layout
