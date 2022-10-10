@@ -1,5 +1,5 @@
 # convbaspy
-### A python - textual CLI IEEE-754 Converter App
+### A python - textual TUI IEEE-754 Converter app
 ![convbaspy tui](./static/tui.png)
 
 
