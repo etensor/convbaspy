@@ -575,13 +575,11 @@ def main():
  ##::: ##: ##:::: ##: ##:. ###::. ## ##::: ##:::: ##: ##.... ##:'##::: ##:##::::::::::: ##::::
 . ######::. #######:: ##::. ##:::. ###:::: ########:: ##:::: ##:. ######::##::::::::::: ##::::
 :......::::.......:::..::::..:::::...:::::........:::..:::::..:::......:::.::::::::::::..:::::  
+
     ''')
     ccs = Console()
     
-    print('''
-    \n\t  David Penilla - etensor
-    \n\t---------------------------
-    ''')
+    
     ccs.print('\tAdvertencia:', style='red')
     print('\t   Intente no mantener presionada ninguna tecla.')
     ccs.print('\t   Press EC at the beginning to flush broken results.', style='yellow')
