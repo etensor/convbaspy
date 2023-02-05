@@ -12,6 +12,19 @@ To start:
 
 ```
 
+
+> **Note**: best to use a python env as textual version is deprecated.
+
+> > Must patch it, but don't know if worth it.
+
+```bash
+python -m venv env
+
+source env/bin/activate
+
+```
+
+
 Install the requirements:
     pip install -r requirements.txt
 
