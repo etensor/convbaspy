@@ -2,6 +2,11 @@
 #getcontext().prec = 24 # 32 bit -> 23
         #ieee754        # 64 bit -> 53
                         # formato ieee754'
+
+# Unos comentarios habrian servido para saber que ocurre menos roboticamente...
+# num --f--!@^%#!^&@ --> k
+
+
 from decimal import getcontext
 from sys import maxsize
 
@@ -10,8 +15,8 @@ from sys import maxsize
 #  4 bits -> b16
 # | <-- primero |==> res[::-1]
 
-## David Penilla
-## github.com/etensor
+## David Penilla 2022
+
 
 class Conversor():
         
